@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> AA BANK </title>
+    </head>
+    <body style="background-image:url(https://www.pngmart.com/files/5/Bank-PNG-Transparent-Picture.png);background-color:#A020F0;background-size:cover">
+        <h1> Create Bank Account </h1>
+
+        <form action = "bankform2.html"> 
+           <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+            <label for="firstName">First Name:</label>
+            <input type="text" size="15" id="firstName" name="firstName" required>
+
+            <label for="middleName">Middle Name:</label>
+            <input type="text" size="15" id="middleName" name="middleName">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" size="15" id="lastName" name="lastName" required>
+
+           </div>
+           <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+           <label for="email">Email:</label>
+            <input type="email" size="50" id="email" name="email" required> <br>
+               
+            <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="tel" size="30" id="phone" name="phone" required>
+            </div>
+            <h1> Address </h1>
+            <label for="streetAddress">Street Address:</label>
+            <input type="text" size="60" id="streetAddress" name="streetAddress" required>
+
+            <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;"> 
+                <label for="city">City:</label>
+            <input type="text" size="20" id="city" name="city" required>
+
+            <label for="state">State:</label>
+            <input type="text" size="10" id="state" name="state" required>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" size="10" id="zip" name="zip" required>
+
+
+            </div>
+
+            <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+                <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="India">India</option>
+                <option value="other">Other</option>
+            </select>
+                </div>
+
+                <h1> Education Level </h1>
+                <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+                    <label><input type="radio" name="education" value="high_school" required> High School</label>
+                    <label><input type="radio" name="education" value="Graduate"> Undergraduate</label>
+                    <label><input type="radio" name="education" value="masters"> Masters Degree</label>
+                    <label><input type="radio" name="education" value="phd"> PhD</label>
+                    <label><input type="radio" name="education" value="NA"> NA</label>
+                </div>    
+                
+                <h3>Form of Identification</h3>
+        <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+            <label><input type="checkbox" name="identification" value="national_id"> National Identity Card</label>
+            <label><input type="checkbox" name="identification" value="drivers_license"> Driver's License</label>
+            <label><input type="checkbox" name="identification" value="passport"> International Passport</label>
+            <label><input type="checkbox" name="identification" value="student_id"> Student ID</label>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <label for="idUpload">Upload Identification Document:</label>
+            <input type="file" id="idUpload" name="idUpload" accept=".jpg, .jpeg, .png, .pdf" required>
+        </div>
+          
+        <h1>Account Information</h1>
+        <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+            <label for="accountType">Account Type:</label>
+            <select id="accountType" name="accountType" required>
+                <option value="priority_banking">Priority Banking</option>
+                <option value="preferred">Preferred</option>
+                <option value="private">Private</option>
+                <option value="time_deposit">Time Deposit</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+         <div> 
+            <label for="accountCategory">Account Category:</label>
+            <select id="accountCategory" name="accountCategory" required>
+                <option value="individual">Individual</option>
+                <option value="joint">Joint</option>
+            </select>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+            <label for="initialDeposit">Initial Deposit Amount:</label>
+            <input type="number" id="initialDeposit" name="initialDeposit" min="0" required>
+        </div>
+
+        <h3>Security Question</h3>
+        <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+            <label for="securityQuestion">Choose a security question:</label>
+            <select id="securityQuestion" name="securityQuestion" required>
+                <option value="pet_name">What is the name of your first pet?</option>
+                <option value="mother_maiden">What is your mother's maiden name?</option>
+                <option value="first_school">What is the name of your first school?</option>
+                <option value="first_car">What was the make of your first car?</option>
+            </select>
+        </div>
+        <div style="margin-top: 10px;">
+            <label for="securityAnswer">Answer:</label>
+            <input type="text" id="securityAnswer" name="securityAnswer" required>
+        </div> 
+
+        
+        <div style="margin-top: 20px;">
+            <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label>
+        </div>
+         
+
+                <br>
+        <input type="submit" value="Submit">      
+        <input type="reset" value="Clear"/>
+        </form>
+    </body>
+</html>
